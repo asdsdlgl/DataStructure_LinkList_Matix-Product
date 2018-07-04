@@ -1,0 +1,9 @@
+HW4-1
+首先先寫2個Linklist將數字用function讀入，如果遇到0則略過不加入linklist中，然後將node用right與所對應的head串起來，再用down將垂直的部分也串起來
+，最後在用next將所有的head串在一起即可完成list的讀入，然後判斷第一個讀入的col是否等於第二個的row如果不相等則程式結束，有的話就做行列式相乘，先
+固定第一個list的right，然後將第二個list的down一個一個往下找，當第一個list的col與第二個list的row相等則相乘起來，然後將第一個list的right在向右移
+，再將第二個list重新歸回head繼續向down找相對應的row與col，再將第一個list向右重複上述動作，最後在呼叫merase將兩個list清除掉。
+
+HW4-2
+跟第一題同樣，先用mread將輸入讀入list中，遇到0則不讀，然後再呼叫transpose將陣列翻轉，因為在讀入的時候已經將0排除，所以list中並沒有0，所以在印出時，
+如果輸入的陣列有0，則需要再重新補0，將list用當一個一個印出，用到底時向head向右移動，最後一樣呼叫merase將list做清除的動作。
